@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -64,21 +65,28 @@ form > h2{
     flex-direction: column;
     gap: 16px;
 }
-#input-field input{
+#email , #password{
+    border: none;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    line-height: 21px;
+    font-size: 15px;
+}
+input::placeholder{
+    color: #ADB0CD;
+}
+input:focus{
+    outline: none;
+}
+.input{
     height: 45px;
     border-radius: 8px;
     border: 1.6px solid #e0e2e9;
-    padding: 10px;
+    padding: 0 10px;
+    color: #ADB0CD;
 }
-input::placeholder{
-    font-family: 'Font Awesome 6 Free' , 'Poppins' , serif;
-    font-weight: 550;
-    line-height: 21px;
-    letter-spacing: 2px;
-    font-size: 12px;
-
-}
-
 .google-btn , .facebook-btn{
     background-color: white;
     height: 43px;
